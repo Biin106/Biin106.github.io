@@ -354,6 +354,7 @@ sup {
   border: 0;
   /*background: var(--card-bg);*/
   /*box-shadow: var(--card-shadow);*/
+  border-bottom: 1px solid var(--main-border-color); // 하단에 구분선 추가
 
   &::before {
     @extend %rounded;
@@ -367,11 +368,11 @@ sup {
     transition: opacity 0.35s ease-in-out;
   }
 
-  &:hover {
+  /*&:hover {
     &::before {
       opacity: 0.3;
     }
-  }
+  }*/
 }
 
 main {
