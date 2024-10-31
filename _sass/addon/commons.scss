@@ -349,15 +349,16 @@ sup {
 }
 
 .post-preview {
-  @extend %rounded;
+  /*@extend %rounded;*/
 
   border: 0;
   /*background: var(--card-bg);*/
   /*box-shadow: var(--card-shadow);*/
   border-bottom: 1px solid var(--main-border-color); // 하단에 구분선 추가
+  position: relative;
 
   &::before {
-    @extend %rounded;
+    /*@extend %rounded;*/
 
     content: '';
     width: 100%;
@@ -366,13 +367,16 @@ sup {
     background-color: var(--card-hovor-bg);
     opacity: 0;
     transition: opacity 0.35s ease-in-out;
+    top:0;
+    left:0;
+    z-index:1;
   }
 
-  /*&:hover {
+  &:hover {
     &::before {
       opacity: 0.3;
     }
-  }*/
+  }
 }
 
 main {
